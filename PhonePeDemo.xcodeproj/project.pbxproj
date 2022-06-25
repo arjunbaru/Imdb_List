@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4219BFB528671AA0001A65A1 /* PhonePeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFB428671AA0001A65A1 /* PhonePeDemoApp.swift */; };
-		4219BFB728671AA0001A65A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFB628671AA0001A65A1 /* ContentView.swift */; };
 		4219BFB928671AA1001A65A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4219BFB828671AA1001A65A1 /* Assets.xcassets */; };
 		4219BFBC28671AA1001A65A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4219BFBB28671AA1001A65A1 /* Preview Assets.xcassets */; };
 		4219BFC628671AA1001A65A1 /* PhonePeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFC528671AA1001A65A1 /* PhonePeDemoTests.swift */; };
 		4219BFD028671AA1001A65A1 /* PhonePeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFCF28671AA1001A65A1 /* PhonePeDemoUITests.swift */; };
 		4219BFD228671AA1001A65A1 /* PhonePeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFD128671AA1001A65A1 /* PhonePeDemoUITestsLaunchTests.swift */; };
+		4219BFE028671DEE001A65A1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFDF28671DEE001A65A1 /* APIClient.swift */; };
+		4219BFE228671E0C001A65A1 /* APIClient+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFE128671E0C001A65A1 /* APIClient+Live.swift */; };
+		4219BFE628671FC1001A65A1 /* imdb_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 4219BFE528671FC1001A65A1 /* imdb_mock.json */; };
+		4219BFEA28672141001A65A1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFE928672141001A65A1 /* Movie.swift */; };
+		4219BFEC28672242001A65A1 /* Movie+Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFEB28672242001A65A1 /* Movie+Endpoint.swift */; };
+		4219BFEE2867232E001A65A1 /* APIClient+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFED2867232E001A65A1 /* APIClient+Environment.swift */; };
+		4219BFF0286725AF001A65A1 /* Movie+ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFEF286725AF001A65A1 /* Movie+ListView.swift */; };
+		4219BFF2286725D4001A65A1 /* Movie+ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFF1286725D4001A65A1 /* Movie+ListViewModel.swift */; };
+		4219BFF5286725FF001A65A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFF4286725FF001A65A1 /* View+Extensions.swift */; };
+		4219BFFA286726E7001A65A1 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFF9286726E7001A65A1 /* ImageView.swift */; };
+		4219BFFC28672702001A65A1 /* ImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFFB28672702001A65A1 /* ImageView+Loader.swift */; };
+		4219C00028672F53001A65A1 /* Movie+DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BFFF28672F53001A65A1 /* Movie+DetailsView.swift */; };
+		4219C0042867336B001A65A1 /* Environment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219C0032867336B001A65A1 /* Environment+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,6 @@
 /* Begin PBXFileReference section */
 		4219BFB128671AA0001A65A1 /* PhonePeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4219BFB428671AA0001A65A1 /* PhonePeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePeDemoApp.swift; sourceTree = "<group>"; };
-		4219BFB628671AA0001A65A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4219BFB828671AA1001A65A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4219BFBB28671AA1001A65A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4219BFC128671AA1001A65A1 /* PhonePeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonePeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,19 @@
 		4219BFCB28671AA1001A65A1 /* PhonePeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonePeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4219BFCF28671AA1001A65A1 /* PhonePeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePeDemoUITests.swift; sourceTree = "<group>"; };
 		4219BFD128671AA1001A65A1 /* PhonePeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4219BFDF28671DEE001A65A1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4219BFE128671E0C001A65A1 /* APIClient+Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Live.swift"; sourceTree = "<group>"; };
+		4219BFE528671FC1001A65A1 /* imdb_mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = imdb_mock.json; sourceTree = "<group>"; };
+		4219BFE928672141001A65A1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		4219BFEB28672242001A65A1 /* Movie+Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Endpoint.swift"; sourceTree = "<group>"; };
+		4219BFED2867232E001A65A1 /* APIClient+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Environment.swift"; sourceTree = "<group>"; };
+		4219BFEF286725AF001A65A1 /* Movie+ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+ListView.swift"; sourceTree = "<group>"; };
+		4219BFF1286725D4001A65A1 /* Movie+ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+ListViewModel.swift"; sourceTree = "<group>"; };
+		4219BFF4286725FF001A65A1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		4219BFF9286726E7001A65A1 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		4219BFFB28672702001A65A1 /* ImageView+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Loader.swift"; sourceTree = "<group>"; };
+		4219BFFF28672F53001A65A1 /* Movie+DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+DetailsView.swift"; sourceTree = "<group>"; };
+		4219C0032867336B001A65A1 /* Environment+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +118,12 @@
 		4219BFB328671AA0001A65A1 /* PhonePeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4219BFF3286725F0001A65A1 /* UIFeatures */,
+				4219BFE828672123001A65A1 /* DataSourceFeature */,
+				4219BFE7286720E9001A65A1 /* MovieFeature */,
+				4219BFE428671F9F001A65A1 /* Resources */,
 				4219BFB428671AA0001A65A1 /* PhonePeDemoApp.swift */,
-				4219BFB628671AA0001A65A1 /* ContentView.swift */,
+				4219BFDE28671DD5001A65A1 /* NetworkFeature */,
 				4219BFB828671AA1001A65A1 /* Assets.xcassets */,
 				4219BFBA28671AA1001A65A1 /* Preview Content */,
 			);
@@ -125,6 +153,78 @@
 				4219BFD128671AA1001A65A1 /* PhonePeDemoUITestsLaunchTests.swift */,
 			);
 			path = PhonePeDemoUITests;
+			sourceTree = "<group>";
+		};
+		4219BFDE28671DD5001A65A1 /* NetworkFeature */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFDF28671DEE001A65A1 /* APIClient.swift */,
+				4219BFED2867232E001A65A1 /* APIClient+Environment.swift */,
+				4219BFE128671E0C001A65A1 /* APIClient+Live.swift */,
+			);
+			path = NetworkFeature;
+			sourceTree = "<group>";
+		};
+		4219BFE428671F9F001A65A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFE528671FC1001A65A1 /* imdb_mock.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4219BFE7286720E9001A65A1 /* MovieFeature */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFFE28672F39001A65A1 /* Details */,
+				4219BFFD28672F28001A65A1 /* List */,
+			);
+			path = MovieFeature;
+			sourceTree = "<group>";
+		};
+		4219BFE828672123001A65A1 /* DataSourceFeature */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFE928672141001A65A1 /* Movie.swift */,
+				4219BFEB28672242001A65A1 /* Movie+Endpoint.swift */,
+			);
+			path = DataSourceFeature;
+			sourceTree = "<group>";
+		};
+		4219BFF3286725F0001A65A1 /* UIFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFF8286726AC001A65A1 /* Components */,
+				4219BFF4286725FF001A65A1 /* View+Extensions.swift */,
+				4219C0032867336B001A65A1 /* Environment+Extension.swift */,
+			);
+			path = UIFeatures;
+			sourceTree = "<group>";
+		};
+		4219BFF8286726AC001A65A1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFF9286726E7001A65A1 /* ImageView.swift */,
+				4219BFFB28672702001A65A1 /* ImageView+Loader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4219BFFD28672F28001A65A1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFF1286725D4001A65A1 /* Movie+ListViewModel.swift */,
+				4219BFEF286725AF001A65A1 /* Movie+ListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		4219BFFE28672F39001A65A1 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4219BFFF28672F53001A65A1 /* Movie+DetailsView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +333,7 @@
 			files = (
 				4219BFBC28671AA1001A65A1 /* Preview Assets.xcassets in Resources */,
 				4219BFB928671AA1001A65A1 /* Assets.xcassets in Resources */,
+				4219BFE628671FC1001A65A1 /* imdb_mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +358,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4219BFB728671AA0001A65A1 /* ContentView.swift in Sources */,
+				4219BFFA286726E7001A65A1 /* ImageView.swift in Sources */,
+				4219BFFC28672702001A65A1 /* ImageView+Loader.swift in Sources */,
+				4219BFF0286725AF001A65A1 /* Movie+ListView.swift in Sources */,
+				4219BFEC28672242001A65A1 /* Movie+Endpoint.swift in Sources */,
 				4219BFB528671AA0001A65A1 /* PhonePeDemoApp.swift in Sources */,
+				4219C00028672F53001A65A1 /* Movie+DetailsView.swift in Sources */,
+				4219BFEE2867232E001A65A1 /* APIClient+Environment.swift in Sources */,
+				4219BFE028671DEE001A65A1 /* APIClient.swift in Sources */,
+				4219BFE228671E0C001A65A1 /* APIClient+Live.swift in Sources */,
+				4219BFEA28672141001A65A1 /* Movie.swift in Sources */,
+				4219C0042867336B001A65A1 /* Environment+Extension.swift in Sources */,
+				4219BFF5286725FF001A65A1 /* View+Extensions.swift in Sources */,
+				4219BFF2286725D4001A65A1 /* Movie+ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

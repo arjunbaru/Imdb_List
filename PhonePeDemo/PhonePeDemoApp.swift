@@ -11,7 +11,8 @@ import SwiftUI
 struct PhonePeDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Movie.ListView(viewModel: .init([]))
+                .embedInNavigation()
         }
     }
 }
